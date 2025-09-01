@@ -12,25 +12,32 @@ This project is a solution for the **Kaggle 2024 Jane Street Real-Time Market Da
 ## Project Structure
 
 ```
-source/
-├── config.json                 # Project configuration file
-├── EDA/
-│   └── test.ipynb             # Exploratory data analysis
-├── training/                   # Model training modules
-│   ├── nn_train.ipynb         # Neural network training
-│   ├── ridge_train.ipynb      # Ridge regression training
-│   ├── xgb_train.ipynb        # XGBoost training
-│   ├── tabm_train.ipynb       # TabNet training
-│   ├── ensemble.ipynb         # Model ensemble and final submission
-│   └── tanm_reference.py      # TabNet model reference implementation
-└── utils/
-    ├── sampling.py            # Data sampling utilities
-    └── README.md              # Utility usage instructions
+├── datasets/
+│   ├── data_descripton.md     # Detailed description of dataset fields and files
+│   └── download_data.sh       # Script to download competition data
+├── source/
+│   ├── config.json            # Project configuration file
+│   ├── EDA/
+│   │   └── test.ipynb         # Exploratory data analysis
+│   ├── training/              # Model training modules
+│   │   ├── nn_train.ipynb     # Neural network training
+│   │   ├── ridge_train.ipynb  # Ridge regression training
+│   │   ├── xgb_train.ipynb    # XGBoost training
+│   │   ├── tabm_train.ipynb   # TabNet training
+│   │   ├── ensemble.ipynb     # Model ensemble and final submission
+│   │   └── tanm_reference.py  # TabNet model reference implementation
+│   └── utils/
+│       ├── sampling.py        # Data sampling utilities
+│       └── README.md          # Utility usage instructions
+├── LICENSE                    # License file
+└── README.md                  # Project overview
 ```
 
 ## Workflow
 
 ### 1. Data Exploration and Preprocessing
+- Review `datasets/data_descripton.md` to understand the dataset structure and field definitions
+- Use `datasets/download_data.sh` to download the competition data from Kaggle
 - Use `EDA/test.ipynb` to explore the patterns of data including 79 anonymized features and target variables
 - Perform data sampling through `utils/sampling.py` if you don't have enough RAM with your local device (require around 64GB RAM and at least 1 GPU for the original task) for rapid development training of light models
 - Create lagged features to enhance temporal information

@@ -1,7 +1,7 @@
 # Jane Street Real-Time Market Data Forecasting
 
 ![Competition](https://img.shields.io/badge/Competition-Kaggle-20BEFF?style=flat-square&logo=kaggle)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Working-brightgreen?style=flat-square)
 ![ML](https://img.shields.io/badge/ML-Ensemble-orange?style=flat-square)
 ![Framework](https://img.shields.io/badge/Framework-PyTorch-red?style=flat-square&logo=pytorch)
 ![Data](https://img.shields.io/badge/Data-Financial-blue?style=flat-square)
